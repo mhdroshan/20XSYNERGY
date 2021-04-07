@@ -1659,7 +1659,7 @@ body {
   bottom: 0;
   z-index: 9999;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(169 205 227 / 13%);
 }
 
 .loader-holder .block {
@@ -1916,7 +1916,7 @@ body {
 .pageFooter {
   z-index: 1;
   min-height: 440px;
-  background-color: rgba(252, 77, 74, 0.05);
+  background-color: rgb(169 205 227 / 13%);
 }
 
 @media (min-width: 768px) {
@@ -1959,27 +1959,28 @@ body {
 -------------------------------------------------------------------*/
 .circleGradient {
   width: 250px;
+  opacity: 0.4;
   height: 250px;
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(10%, rgba(252, 77, 74, 0.3)),
+    color-stop(10%, #2881b985),
     color-stop(55%, rgba(255, 255, 255, 0))
   );
   background: -webkit-linear-gradient(
     top,
-    rgba(252, 77, 74, 0.3) 10%,
+    #2881b985 10%,
     rgba(255, 255, 255, 0) 55%
   );
   background: -o-linear-gradient(
     top,
-    rgba(252, 77, 74, 0.3) 10%,
+    #2881b985 10%,
     rgba(255, 255, 255, 0) 55%
   );
   background: linear-gradient(
     to bottom,
-    rgba(252, 77, 74, 0.3) 10%,
+    #2881b985 10%,
     rgba(255, 255, 255, 0) 55%
   );
   z-index: -1;
@@ -2009,22 +2010,18 @@ body {
     linear,
     left top,
     left bottom,
-    from(rgba(252, 77, 74, 0.3)),
+    from(#2881b985),
     color-stop(70%, rgba(255, 255, 255, 0))
   );
   background: -webkit-linear-gradient(
     top,
-    rgba(252, 77, 74, 0.3) 0%,
+    #2881b985 0%,
     rgba(255, 255, 255, 0) 70%
   );
-  background: -o-linear-gradient(
-    top,
-    rgba(252, 77, 74, 0.3) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
+  background: -o-linear-gradient(top, #2881b985 0%, rgba(255, 255, 255, 0) 70%);
   background: linear-gradient(
     to bottom,
-    rgba(252, 77, 74, 0.3) 0%,
+    #2881b985 0%,
     rgba(255, 255, 255, 0) 70%
   );
 }
@@ -2056,22 +2053,43 @@ body {
     linear,
     left top,
     left bottom,
-    from(rgba(252, 77, 74, 0.3)),
+    from(#2881b985),
     color-stop(70%, rgba(255, 255, 255, 0))
   );
   background: -webkit-linear-gradient(
     top,
-    rgba(252, 77, 74, 0.3) 0%,
+    #2881b985 0%,
     rgba(255, 255, 255, 0) 70%
   );
-  background: -o-linear-gradient(
-    top,
-    rgba(252, 77, 74, 0.3) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
+  background: -o-linear-gradient(top, #2881b985 0%, rgba(255, 255, 255, 0) 70%);
   background: linear-gradient(
     to bottom,
-    rgba(252, 77, 74, 0.3) 0%,
+    #2881b985 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 300px;
+  right: -100px;
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+.ovelGradient[data-circle="circleIF"] {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#2881b985),
+    color-stop(70%, rgba(255, 255, 255, 0))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #2881b985 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background: -o-linear-gradient(top, #2881b985 0%, rgba(255, 255, 255, 0) 70%);
+  background: linear-gradient(
+    to bottom,
+    #2881b985 0%,
     rgba(255, 255, 255, 0) 70%
   );
   top: 300px;
@@ -2109,29 +2127,58 @@ body {
     right: 140px;
   }
 }
+@media (min-width: 576px) {
+  .ovelGradient[data-circle="circleIF"] {
+    top: 90px;
+    right: 20px;
+    -webkit-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    transform: rotate(140deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .ovelGradient[data-circle="circleIF"] {
+    top: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ovelGradient[data-circle="circleIF"] {
+    right: 50px;
+  }
+}
+
+@media (min-width: 1230px) {
+  .ovelGradient[data-circle="circleIF"] {
+    top: 40px;
+    right: 140px;
+  }
+}
 
 /*------------------------------------------------------------------
 50. ovelGradient / .ovelGradient
 -------------------------------------------------------------------*/
 .ovelGradient {
   top: 0;
+  opacity: 0.4;
   left: 0;
   z-index: -1;
-  width: 165px;
-  height: 309px;
+  width: 250px;
+  height: 250px;
 }
 
 @media (min-width: 992px) {
   .ovelGradient {
-    width: 215px;
-    height: 403px;
+    width: 320px;
+    height: 320px;
   }
 }
 
 @media (min-width: 1230px) {
   .ovelGradient {
-    width: 255px;
-    height: 478px;
+    width: 403px;
+    height: 403px;
   }
 }
 
