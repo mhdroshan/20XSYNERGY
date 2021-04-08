@@ -57,7 +57,7 @@
 										<!-- dropdown -->
 										<li class="nav-item dropdown">
 											<a class="nav-link smooth dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-scroll-nav="1" href="#">Nursing facilities</a>
-											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<div  class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 												<a class="dropdown-item" href="./NF-how-we-work.html">How we work</a>
 												<a class="dropdown-item" href="#">Synergy staffing</a>
 												<a class="dropdown-item" href="#">Synergy scheduling</a>
@@ -102,19 +102,19 @@
 									</h1>
 									<div class="d-flex">
 										<div class="land-button">
-											<a href="javascript:void(0);" class="btn btn-primary text-uppercase rounded-pill fwSemibold" data-toggle="modal" data-target="#exampleModal">
+											<a href="https://20x.io/2xdemo/reguseradmindashboard/eS9Xem5MdGZ2SmJNeXZjZFd5ckZJUT09" class="btn btn-primary text-uppercase rounded-pill fwSemibold" >
 												Nursing Facilities 
 											</a>
 										</div>
 										<div class="land-button">
-											<a href="javascript:void(0);" class="btn btn-primary text-uppercase rounded-pill fwSemibold" data-toggle="modal" data-target="#exampleModal">
+											<a href="https://20x.io/2xdemo/reguseradmindashboard/eS9Xem5MdGZ2SmJNeXZjZFd5ckZJUT09" class="btn btn-primary text-uppercase rounded-pill fwSemibold" >
 												Nursing Professionals 
 											</a>
 										</div>
 									</div>
 
 									<!-- dummy para -->
-									<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+									<p style="margin-top: 10px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
 								</div>
 							</div>
 							<div class="col-12 col-lg-6">
@@ -690,13 +690,7 @@
 		</div>
 	</div>
 
-<!-- dropdown hover -->
 
-<script>$('.dropdown li a').hover(function() {
-	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-  }, function() {
-	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-  });</script>
 
 
 
@@ -714,5 +708,13 @@
 	<script src="js/formValidator.js"></script>
 	<!-- include jQuery -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+<!-- dropdown hover -->
+<script>$('.dropdown').hover(function() {
+	$(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(400);
+  }, function() {
+	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(400);
+  });</script>
 </body>
 </html>
