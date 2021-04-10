@@ -92,6 +92,7 @@ body {
   /* padding-left: 22px; */
   /* letter-spacing: 0.3px; */
 }
+
 .dropdown-menu {
   padding: 0;
 
@@ -137,6 +138,7 @@ body {
   border-radius: 2px 2px 5px 5px;
   font-size: 14px;
   text-align: left;
+  /* background-color: #f2f9fb; */
   line-height: 21px;
 }
 
