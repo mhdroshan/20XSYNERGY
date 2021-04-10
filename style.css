@@ -67,7 +67,9 @@ Theme URI: http://www.htmlbeans.com/html/Montero/
 54. footerArea / .footerArea
 
 -------------------------------------------------------------------*/
-
+body {
+  scroll-behavior: smooth;
+}
 .land-button {
   margin: 10px 20px;
 }
@@ -77,30 +79,68 @@ Theme URI: http://www.htmlbeans.com/html/Montero/
 .dropdown-item {
   font-size: 15px;
   margin: 0px auto;
-  /* font-weight: 500; */
-  transition: 0.2s ease-in;
-  /* text-align: center; */
-  /* border-top: 0.5px solid darkgrey; */
+  box-shadow: inset 3px 0px 0px #2881b9;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+
   padding: 10px 20px;
-  /* border-bottom: 0.5px solid darkgrey; */
 }
 .dropdown-item:hover {
-  background-color: #2881b98c;
+  box-shadow: inset 300px 0px 0px #2881b9;
   color: white;
-  padding-left: 22px;
-  letter-spacing: 0.3px;
-  /* transform: tra; */
+  /* padding-left: 22px; */
+  /* letter-spacing: 0.3px; */
 }
 .dropdown-menu {
   padding: 0;
-  transition: 0.2s ease-in;
+
   margin-top: 12px;
   border: none;
   border-radius: 0 0 5px 5px;
   min-width: 200px;
-  border-top: 3px solid #2881b9;
+  /* border-top: 3px solid #2881b9; */
   box-shadow: -7px 7px 19px 0px #0000001f;
 }
+.about-text {
+  margin: 60px auto 5px auto;
+  padding: 10px 50px;
+}
+.svg-image {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+}
+.card-hol {
+  width: 100%;
+  min-width: 285px;
+  height: 100%;
+  margin: 5px auto;
+  min-height: 320px;
+}
+
+.ser-holdeer {
+  margin: auto;
+  width: 100%;
+}
+.ser-holdeer .dat {
+  padding: 12px 15px 5px 15px;
+  box-shadow: -6px 6px 18px 0 rgb(25 42 70 / 13%);
+  margin: 10px;
+  height: 270px;
+  border: none;
+  border-top: 4px solid;
+  border-radius: 2px 2px 5px 5px;
+  font-size: 14px;
+  text-align: left;
+  line-height: 21px;
+}
+
+/*  */
 /* Slider */
 .slick-slider {
   position: relative;
@@ -1166,7 +1206,8 @@ body {
 
 .testimonial .author {
   font-style: normal;
-  color: #999;
+  color: white;
+  font-weight: 500;
 }
 
 .testimonial .quoteImg {

@@ -51,24 +51,24 @@
 									<!-- navbar-nav of the page -->
 									<ul class="navbar-nav">
 										<li class="nav-item">
-											<a class="nav-link smooth" data-scroll-nav="0" href="#">Home </a>
+											<a class="nav-link smooth"  href="./index.html">Home </a>
 										</li>
 
 										<!-- dropdown -->
 										<li class="nav-item dropdown">
-											<a class="nav-link smooth dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-scroll-nav="1" href="#">Nursing facilities</a>
+											<a class="nav-link smooth dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="#">Nursing facilities</a>
 											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 												<a class="dropdown-item" href="./NF-how-we-work.html">How we work</a>
-												<a class="dropdown-item" href="#">Synergy staffing</a>
-												<a class="dropdown-item" href="#">Synergy scheduling</a>
-												<a class="dropdown-item" href="#">Synergy scheduling</a>
+												<a class="dropdown-item" href="./NF-how-we-work.html">Synergy staffing</a>
+												<a class="dropdown-item" href="./NF-how-we-work.html">services</a>
+												<a class="dropdown-item" href="./NF-how-we-work.html">Synergy scheduling</a>
 											  </div>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link smooth" data-scroll-nav="2" href="#">Nursing Professionals</a>
+											<a class="nav-link smooth"  href="#">Nursing Professionals</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link smooth" data-scroll-nav="3" href="#">Testimonial <span class="sr-only">(current)</span></a>
+											<a class="nav-link smooth"  href="#">Testimonial <span class="sr-only">(current)</span></a>
 										</li>
 									</ul>
 								</div>
@@ -82,7 +82,7 @@
 		<main>
 				<!-- testimonialBlock of the page -->
 	<aside class="testimonialBlock position-relative d-flex text-center" data-scroll-index="3" style="background-image: url(./images/testimonials/background.jpg);">
-		<div style="backdrop-filter: blur(3px);" class="alignCenter w-100 align-items-center d-flex">
+		<div style="backdrop-filter: blur(3px);background-color: #2881b952;" class="alignCenter w-100 align-items-center d-flex">
 			<div class="container py-10 py-sm-12 pt-lg-15 pb-lg-13">
 				<div class="row">
 					<div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
@@ -279,8 +279,13 @@
 	<script src="js/formValidator.js"></script>
 	<!-- include jQuery -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<!-- dropdown hover -->
-
+	
+<!-- dropdown hover -->
+<script>$('.dropdown').hover(function() {
+	$(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(400);
+  }, function() {
+	$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(400);
+  });</script>
 
 </body>
 
