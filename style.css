@@ -92,7 +92,9 @@ body {
   /* padding-left: 22px; */
   /* letter-spacing: 0.3px; */
 }
-
+.testimonial .author {
+  color: #2881b9 !important;
+}
 .dropdown-menu {
   padding: 0;
 
@@ -141,10 +143,19 @@ body {
   /* background-color: #f2f9fb; */
   line-height: 21px;
 }
-
+.testim-image {
+  background-image: url(./images/svg/testimonial.png);
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 /*  */
 /* Slider */
 .slick-slider {
+  margin: 20% auto 0 auto;
+  backdrop-filter: blur(4px);
+  background: #ffffff0d;
   position: relative;
   display: block;
   -webkit-box-sizing: border-box;
