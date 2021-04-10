@@ -70,11 +70,27 @@ Theme URI: http://www.htmlbeans.com/html/Montero/
 body {
   scroll-behavior: smooth;
 }
+nav {
+  margin: 0 auto 0 70px;
+}
+nav button {
+  position: fixed;
+  right: 30px;
+  background-color: white !important;
+}
+.mainNavHolder .btn {
+  width: 100px;
+  padding: 10px 12px;
+  margin: 10px 10px;
+}
 .land-button {
   margin: 10px 20px;
 }
 .land-button a {
   padding: 10px 20px;
+}
+.btnHolder a {
+  max-width: 120px !important;
 }
 .dropdown-item {
   font-size: 15px;
@@ -1914,18 +1930,18 @@ body {
 
 @media (min-width: 992px) {
   .mainNavHolder .btn {
-    min-width: 175px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    min-width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
   }
 }
 
 @media (min-width: 1230px) {
   .mainNavHolder .btn {
-    min-width: 192px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    min-width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
